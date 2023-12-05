@@ -1,0 +1,269 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Krub', sans-serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+    font-size: 16px;
+    margin: 0%;
+    background-color: #EEEEEE;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+span{
+    font-size: 2rem; /** 1 rem = 10px **/
+    color: #00ADB5;
+}
+
+
+.nav-bg{
+    background-color:#222831;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px){
+    .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: #00ADB5;
+}
+
+@media (max-width: 768px){
+    .navegacion-principal a:hover{
+        width: 100%;
+       height: 100%;
+    }
+}
+
+
+
+
+.hero{
+    background-image:url(imagenes/hero.jpg);
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 41rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.title-hero{
+    margin-top: 0%;
+    font-size: 3.5rem;
+}
+
+.hero-flex{
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+}
+
+.info-title{
+    color: black;
+}
+
+.boton{
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    background-color: #00ADB5;
+    padding: 1rem 3rem;
+    color: #EEEEEE;
+    border-radius: 0.5rem;
+    font-style: none;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    border: none;
+}
+
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+
+.contenedor-info{
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+max-width: 120rem;
+margin: 0 auto;
+padding: 2rem;
+border-radius: 1rem;
+}
+
+.info-title{
+    text-align: center;
+}
+
+.info-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .info-flex{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.title-contact{
+    text-align: center;
+}
+
+.info-flex h3{
+    color: #00ADB5;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.info p{
+    line-height: 2;
+}
+
+.info .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: #222831;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+background-color: #222831;
+width: min(60rem, 100%);
+margin: 0 auto;
+padding:2rem;
+border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    color: #00ADB5;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+@media (min-width: 768px){
+    .contenedor-formulario{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .campos:nth-child(3){
+        grid-column: 1 / 3;
+    }
+
+    .campos:nth-child(4){
+        grid-column: 1 / 3;
+    }
+
+    
+}
+.contenedor-formulario{
+    display: grid;
+
+}
+
+.campos{
+    margin-bottom: 1rem;
+}
+
+.campos label{
+    color: #EEEEEE;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.campos input{
+    width: 100%;
+    border:none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.campos textarea{
+    width: 100%;
+    border:none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.enviar .boton{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
